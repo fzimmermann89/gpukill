@@ -44,3 +44,8 @@ Killed 12247 zimmer08  551 MiB python -c import torch;a=torch.zeros(10).cuda();i
 ```Accessing GPU 1
 Killed 12410 zimmer08  551 MiB python -c import torch;a=torch.zeros(10).cuda();import time;time.sleep(100)
 ```
+###INSTALLATION
+```
+sudo sh -c "cp gpukill /usr/sbin;chown root:root /usr/sbin/gpukill; chmod +x /usr/sbin '
+sudo sh -c "cp gpukillrule /etc/sudoers.d/gpukill; chown root:root /etc/sudoers.d/gpukill; chmod 0440 /etc/sudoers.d/gpukill"
+```

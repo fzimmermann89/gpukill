@@ -1,0 +1,4 @@
+User_Alias GPUUSERS = %gpu0, %gpu1, %gpu2, %gpu3
+Cmnd_Alias GPUKILL = /usr/sbin/gpukill
+Defaults!GPUKILL preserve_groups
+GPUUSERS ALL=(root) NOPASSWD: GPUKILL
